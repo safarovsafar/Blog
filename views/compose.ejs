@@ -1,0 +1,13 @@
+<% include ../views/partials/header%>
+    <h1>NEW BLOG POST</h1>
+    <div class='form-group'>
+    <form class='' action='/compose' method='post'>
+       <label for="exampleFormControlSelect1">Post Title</label>
+       <input type='text' class='form-control' name='postTitle'>
+       <label for="exampleFormControlSelect1">Post</label>
+       <textarea class="form-control" id="exampleFormControlTextarea1" name='postBody' rows="5"></textarea>
+       <br>
+       <button class='btn btn-primary' type='submit' name='button'>Publish</button>
+    </form>
+    </div>
+<% include ../views/partials/footer%>
