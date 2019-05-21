@@ -59,12 +59,11 @@ app.get('/posts/:postName', (req,res) => {
     const storedTitle = post.title;
 
     if (storedTite === requestedTitle) {
-      console.log('Match found')
+      console.log('Match found');
     }
-  });;
+  });
+});
 
-})
-
-app.listen(3000, function () {
+app.listen(3002, function () {
   console.log("Server started on port 3000");
 });
